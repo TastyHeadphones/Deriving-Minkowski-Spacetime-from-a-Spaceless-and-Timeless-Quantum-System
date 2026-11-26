@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A reproducible study of spacetime reconstruction from finite quantum systems.">
+  <title>Emergent Spacetime Research</title>
+  <link rel="stylesheet" href="site.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#overview"><span class="mark" aria-hidden="true">∿</span> Emergent Spacetime</a>
+    <nav aria-label="Main navigation">
+      <a href="#results">Results</a><a href="#proofs">Proofs</a><a href="#models">Models</a><a href="#library">Library</a><a href="#verification">Verification</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="overview" aria-labelledby="intro">
+      <div class="wrap hero-layout">
+        <div>
+          <p class="eyebrow">Foundations of quantum theory</p>
+          <h1 id="intro">Can spacetime<br>emerge from<br>quantum data?</h1>
+          <p class="hero-copy">An open investigation into which assumptions can recover space, clocks, causality, and the Minkowski interval.</p>
+          <div class="hero-links"><a class="button primary" href="#results">Read the results</a><a class="button secondary" href="#models">Explore the models</a></div>
+        </div>
+        <figure class="hero-figure">
+          <canvas id="hero-cone" width="580" height="440" role="img" aria-label="A comparison Minkowski diagram with a vertical time axis and diagonal null rays."></canvas>
+          <figcaption><span>Minkowski comparison geometry</span><span>c²dt² − dx² − dy² − dz²</span></figcaption>
+        </figure>
+      </div>
+    </section>
+    <div class="wrap">
+      <section id="results" class="section">
+        <p class="eyebrow">Research results</p>
+        <h2>One preparation rule, many geometries.</h2>
+        <p class="lede">Every finite simple graph occurs as the support of mutual information in a separable diagonal quantum state. With the same subsystem count and local dimension, a path and a triangle give distinct recovered relations. Specified continuum families also yield different spatial dimensions.</p>
+        <div class="cols">
+          <article><h3>Analytic result</h3><p>Independent fair bits copied to endpoints yield exactly two bits of mutual information on an edge and zero off the graph. The preparation needs no physical embedding.</p><a href="paper.html">Read the proof and its scope →</a></article>
+          <article><h3>Open question</h3><p>Which independently motivated assumptions could select a calibrated Lorentzian limit, fix its dimension and topology, and give every sector the same causal cone?</p><a href="#axioms">Inspect the model assumptions →</a></article>
+        </div>
+      </section>
+      <section id="proofs" class="section">
+        <div class="section-head"><div><p class="eyebrow">Formal verification</p><h2>Proof explorer</h2></div><a href="https://github.com/TastyHeadphones/Deriving-Minkowski-Spacetime-from-a-Spaceless-and-Timeless-Quantum-System">GitHub repository ↗</a></div>
+        <div class="proof-layout">
+          <label for="proof-select">Lean declaration<select id="proof-select"></select></label>
+          <article class="record" id="proof-record" aria-live="polite"></article>
+        </div>
+        <div class="dependency">
+          <div class="section-head"><h3>Dependency graph</h3><label for="node-select">Inspect a node<select id="node-select"></select></label></div>
+          <canvas id="dependency-graph" width="1000" height="400" role="img" aria-label="Edges run from dependencies into the selected node and from it to its dependents. Text equivalents follow."></canvas>
+          <p id="node-description" aria-live="polite"></p>
+          <p id="dependency-summary" class="muted"></p>
+        </div>
+      </section>
+      <section id="models" class="section">
+        <p class="eyebrow">Model laboratory</p>
+        <h2>Change a model. Inspect the result.</h2>
+        <p class="lede">These are illustrations of specified mathematical constructions. The selected control changes the model assumptions or the observable shown.</p>
+        <div class="lab">
+          <label for="model-select">Model<select id="model-select">
+            <option value="clock">Page–Wootters clock</option><option value="entanglement">Entanglement and local interventions</option><option value="graph">Mutual-information networks</option><option value="metric">Shortest-walk metric</option><option value="signal">Information propagation</option><option value="order">Causal order</option><option value="dimension">Effective dimension</option><option value="boost">Lorentz transformations</option><option value="cone">Minkowski diagram</option><option value="continuum">Continuum convergence</option>
+          </select></label>
+          <label for="parameter"><span id="parameter-label">Clock reading</span><input id="parameter" type="range"><output id="parameter-value" for="parameter"></output></label>
+          <div class="lab-visual"><canvas id="model-canvas" width="760" height="380" role="img" aria-describedby="model-summary"></canvas></div>
+          <p id="model-summary" aria-live="polite"></p>
+          <p class="muted" id="model-note"></p>
+        </div>
+      </section>
+      <section id="axioms" class="section">
+        <p class="eyebrow">Model foundations</p>
+        <h2>Axiom explorer</h2>
+        <p>The dependency view traces recorded project assumptions. Logical dependencies of compiled theorems appear in the proof explorer.</p>
+        <label for="axiom-select">Assumption or definition<select id="axiom-select"></select></label>
+        <article class="record" id="axiom-record" aria-live="polite"></article>
+      </section>
+      <section id="library" class="section">
+        <p class="eyebrow">Research library</p>
+        <h2>Papers and counterexamples</h2>
+        <article class="record"><p class="muted">Working paper · November 2026</p><h3>Correlation graphs do not select Minkowski spacetime</h3><p>Graph realization, clock conditioning, intervention protocols, and a controlled spatial continuum limit.</p><p><a href="paper.html">Read HTML paper →</a> <a id="pdf-link" href="paper.pdf" hidden>Download PDF ↓</a> <a href="literature.html">Primary sources →</a></p></article>
+        <div id="counterexamples"></div>
+      </section>
+      <section id="verification" class="section">
+        <p class="eyebrow">Reproducibility</p>
+        <h2>Verification dashboard</h2>
+        <div id="dashboard" aria-live="polite"><p>Loading verification records…</p></div>
+        <p class="muted">Checks establish compilation, dependency auditing and repeatability for the recorded source. Physical validity requires independent evidence.</p>
+      </section>
+      <section id="timeline" class="section">
+        <h2>Research timeline</h2>
+        <ol id="milestones" class="milestones"></ol>
+        <h3>Open conjectures</h3><div id="conjectures" class="cols"></div>
+      </section>
+      <noscript><p>JavaScript is required for the interactive explorers. <a href="paper.html">Read the paper</a> for the results and proofs.</p></noscript>
+    </div>
+  </main>
+  <footer><div class="wrap">Emergent Spacetime Research <a href="#overview">Back to overview ↑</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+name: Scientific computing
+on:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  science:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version-file: .python-version
+      - shell: bash
+        run: |
+          mkdir -p artifacts/science
+          python -m unittest discover -s tests -v 2>&1 | tee artifacts/science/tests.log
+          python -m experiments.run
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: science
+          path: artifacts/science
+          if-no-files-found: error

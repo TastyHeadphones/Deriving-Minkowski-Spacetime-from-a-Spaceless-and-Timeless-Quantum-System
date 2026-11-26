@@ -1,0 +1,17 @@
+{
+  "kernel_allowed": ["Classical.choice", "Quot.sound", "propext"],
+  "entries": [
+    {"id":"Q0","kind":"model assumption","title":"Finite quantum kinematics","motivation":"States are probabilities on observables of a finite quantum system. This supplies no spacetime or clock.","source":"research/papers/correlation-underdetermination.md"},
+    {"id":"Q1","kind":"model assumption","title":"Subsystems and a diagonal preparation","motivation":"Distinguishable registers let us ask which geometric information a state can determine. A chosen factorization supplies subsystem labels without a spatial embedding.","source":"research/papers/correlation-underdetermination.md"},
+    {"id":"R1","kind":"reconstruction rule","title":"Positive mutual information and walk distance","motivation":"The support rule makes a purely relational inference to adjacency. Unit edge costs are fixed by the rule.","source":"EmergentSpacetime/EmergentSpace.lean"},
+    {"id":"T1","kind":"model assumption","title":"Clock shift and system map","motivation":"A stationary history is conditioned on a selected clock and joint shift. Clock labels and iterates are mathematical.","source":"EmergentSpacetime/RelationalTime.lean"},
+    {"id":"CPTP","kind":"model assumption","title":"Trace-preserving local intervention","motivation":"The stochastic diagonal case needs column normalization. Access to the specified intervention is extra structure.","source":"EmergentSpacetime/EmergentCausality.lean"},
+    {"id":"K1","kind":"comparison geometry","title":"Selected interval and boost parameters","motivation":"The interval is an input of the conditional invariant calculation. It cannot support a foundational derivation of itself.","source":"EmergentSpacetime/LorentzSymmetry.lean"},
+    {"id":"D-STATE","kind":"definition","title":"Normalized diagonal law","motivation":"Nonnegative weights sum to one in a specified orthonormal basis.","source":"EmergentSpacetime/QuantumSystem.lean"},
+    {"id":"D-TOKEN","kind":"definition","title":"Incident token","motivation":"A token is shared by its two endpoints wherever the graph has an edge.","source":"EmergentSpacetime/EmergentSpace.lean"},
+    {"id":"D-PATH","kind":"definition","title":"Reachable reversible path costs","motivation":"Zero-length, reversal and concatenation laws capture walks in a connected component.","source":"EmergentSpacetime/PathMetric.lean"},
+    {"id":"D-CLOCK","kind":"definition","title":"Shifted clock history","motivation":"A shift combines the inverse clock permutation and a system map.","source":"EmergentSpacetime/RelationalTime.lean"},
+    {"id":"D-SCALE","kind":"definition","title":"Zero set of a scalar-valued map","motivation":"Zero sets ignore multiplication by nonzero scalars.","source":"EmergentSpacetime/MinkowskiMetric.lean"},
+    {"id":"EX-PATH","kind":"counterexample","title":"Path and triangle","motivation":"At the same label count the two graphs disagree about completeness.","source":"EmergentSpacetime/Counterexamples.lean"}
+  ]
+}

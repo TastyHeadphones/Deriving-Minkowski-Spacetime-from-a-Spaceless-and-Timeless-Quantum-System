@@ -1,0 +1,5 @@
+[
+  {"date":"2026-11-26","title":"Initial countermodels","detail":"Narrowed the first inference to positive mutual information and constructed path and triangle examples at fixed subsystem count."},
+  {"date":"2026-11-26","title":"Clock and propagation separated","detail":"Recorded the clock transition, discrete update relation and operational intervention protocol as additional assumptions."},
+  {"date":"2026-11-26","title":"Controlled comparison limit","detail":"Established a local grid approximation with an explicit distance error bound and alternative dimensions."}
+]

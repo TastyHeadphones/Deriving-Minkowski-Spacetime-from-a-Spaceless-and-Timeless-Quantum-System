@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite this research software using its repository URL and the exact commit used."
+title: "Deriving Minkowski Spacetime from a Spaceless and Timeless Quantum System"
+type: software
+authors:
+  - name: "Deriving Minkowski Spacetime repository contributors"
+repository-code: "https://github.com/TastyHeadphones/Deriving-Minkowski-Spacetime-from-a-Spaceless-and-Timeless-Quantum-System"
+license: Unlicense
+version: 0.1.0

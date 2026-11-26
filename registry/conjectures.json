@@ -1,0 +1,7 @@
+{
+  "conjectures": [
+    {"id":"OPEN-ROBUST","title":"Uniform reconstruction under noise","status":"open","statement":"Quantify trace-distance and dimension conditions under which uniform errors in two-label marginals leave the thresholded edge set unchanged along a scaling family.","dependencies":["Q1","R1","SPACE-SUPPORT"]},
+    {"id":"OPEN-CLOCK","title":"Operational clock orientation","status":"open","statement":"Find a physically motivated stationary constraint and resource condition that establish a robust directed internal ordering.","dependencies":["T1","TIME-STEP"]},
+    {"id":"OPEN-RELATIVISTIC","title":"A selected relativistic continuum","status":"open","statement":"Identify independent nongeometric conditions that both eliminate the demonstrated countermodels and imply a calibrated complete Minkowski limit.","dependencies":["MAIN-NEGATIVE","CONE-SCALE","OPEN-ROBUST"]}
+  ]
+}
